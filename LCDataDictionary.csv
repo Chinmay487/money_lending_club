@@ -33,7 +33,7 @@ inq_fi,Number of personal finance inquiries, all are null
 inq_last_12m,Number of credit inquiries in past 12 months, all are null
 inq_last_6mths,The number of inquiries in past 6 months (excluding auto and mortgage inquiries), work on this
 installment,The monthly payment owed by the borrower if the loan originates., ok
-int_rate,Interest Rate on the loan, Remove “%” 
+int_rate,Interest Rate on the loan, remove all % signs
 issue_d,The month which the loan was funded, convert to separate year and month
 last_credit_pull_d,The most recent month LC pulled credit for this loan, convert to separate year and month
 last_fico_range_high,The upper boundary range the borrower’s last FICO pulled belongs to., ok
@@ -48,10 +48,10 @@ mo_sin_old_il_acct,Months since oldest bank installment account opened, all are 
 mo_sin_old_rev_tl_op,Months since oldest revolving account opened, all are null
 mo_sin_rcnt_rev_tl_op,Months since most recent revolving account opened, all are null
 mo_sin_rcnt_tl,Months since most recent account opened, all are null
-mort_acc,Number of mortgage accounts., everything is null
+mort_acc,Number of mortgage accounts., all are null
 mths_since_last_delinq,The number of months since the borrower's last delinquency., clueless
 mths_since_last_major_derog,Months since most recent 90-day or worse rating, all are null
-mths_since_last_record,The number of months since the last public record., clueless
+mths_since_last_record,The number of months since the last public record., replaced null values with 0 but ask to sir
 mths_since_rcnt_il,Months since most recent installment accounts opened, all are null
 mths_since_recent_bc,Months since most recent bankcard account opened., all are null
 mths_since_recent_bc_dlq,Months since most recent bankcard delinquency, all are null
@@ -62,12 +62,12 @@ num_accts_ever_120_pd,Number of accounts ever 120 or more days past due, all are
 num_actv_bc_tl,Number of currently active bankcard accounts, all are null
 num_actv_rev_tl,Number of currently active revolving trades, all are null
 num_bc_sats,Number of satisfactory bankcard accounts, all are null
-num_bc_tl,Number of bankcard accounts, everything is null
-num_il_tl,Number of installment accounts, everything is null
-num_op_rev_tl,Number of open revolving accounts, everything is null
-num_rev_accts,Number of revolving accounts, everything is null
+num_bc_tl,Number of bankcard accounts, all are null
+num_il_tl,Number of installment accounts, all are null
+num_op_rev_tl,Number of open revolving accounts, all are null
+num_rev_accts,Number of revolving accounts, all are null
 num_rev_tl_bal_gt_0,Number of revolving trades with balance >0, all are null
-num_sats,Number of satisfactory accounts, everything is null
+num_sats,Number of satisfactory accounts, all are null
 num_tl_120dpd_2m,Number of accounts currently 120 days past due (updated in past 2 months), all are null
 num_tl_30dpd,Number of accounts currently 30 days past due (updated in past 2 months), all are null
 num_tl_90g_dpd_24m,Number of accounts 90 or more days past due in last 24 months, all are null
@@ -95,10 +95,10 @@ revol_util,"Revolving line utilization rate, or the amount of credit the borrowe
 sub_grade,LC assigned loan subgrade, label encode and onehot encode
 tax_liens,Number of tax liens, remove nan values and remaining are 0 and 1
 term,The number of payments on the loan. Values are in months and can be either 36 or 60., remove “Months” word
-title,The loan title provided by the borrower, everything is null
-tot_coll_amt,Total collection amounts ever owed, everything is null
-tot_cur_bal,Total current balance of all accounts, everything is null
-tot_hi_cred_lim,Total high credit/credit limit, everything is null
+title,The loan title provided by the borrower, all are null
+tot_coll_amt,Total collection amounts ever owed, all are null
+tot_cur_bal,Total current balance of all accounts, all are null
+tot_hi_cred_lim,Total high credit/credit limit, all are null
 total_acc,The total number of credit lines currently in the borrower's credit file, 29 values are null and remaining is ok
 total_bal_ex_mort,Total credit balance excluding mortgage, all are null
 total_bal_il,Total current balance of all installment accounts, all are null
